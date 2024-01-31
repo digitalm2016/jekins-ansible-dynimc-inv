@@ -6,7 +6,7 @@ resource "aws_instance" "AWSEC2INSTANCE" {
   instance_type="t2.micro"
   key_name="devpemkey"
   security_groups=["launch-wizard-3"]
-  tags{
+  tag{
     Name="tomcat_server_new"
   }
 }
